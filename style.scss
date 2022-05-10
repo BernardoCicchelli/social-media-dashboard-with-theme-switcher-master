@@ -6,7 +6,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+}
 body {
   background: white;
   height: 300vh;
