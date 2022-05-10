@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  height: 300vh;
+}
+
+.dark-mode {
+  background: #1e202a;
+}
+.dark-mode h1 {
+  color: white;
+}
+.dark-mode .container .row .col-xs h1 {
+  color: white;
+}
+.dark-mode .social-media-card-wrapper .social-media-card .row.flex {
+  background: #252a41;
+}
+.dark-mode .row .col .span {
+  color: white;
+}
+.dark-mode .rectangle-card-wrapper .rectangle-card {
+  background: #252a41;
+}
+
+.container {
+  margin: 36px auto;
+}
+.container .divider {
+  display: block;
+}
+.container .row .col-xs h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #1d1f29;
+}
+.container .row .col-xs span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #63687d;
+}
+
+.align-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.form-switch .form-check-input {
+  width: 3em;
+  height: 1.5em;
+}
+
+.social-media-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .social-media-card-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    gap: 63px;
+  }
+}
+.social-media-card-wrapper .social-media-card {
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+}
+.social-media-card-wrapper .social-media-card .row.flex {
+  height: 30vh;
+  width: 80vw;
+  border-radius: 5px;
+  background: #f1f3fa;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .social-media-card-wrapper .social-media-card .row.flex {
+    width: 19vw;
+  }
+}
+.social-media-card-wrapper .social-media-card .row.flex .col.rows-gap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.social-media-card-wrapper .social-media-card h1 {
+  font-family: "Inter";
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+.social-media-card-wrapper .social-media-card span {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #63687d;
+}
+.social-media-card-wrapper .social-media-card .username {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.social-media-card-wrapper .social-media-card .green {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  color: #1eb589;
+  letter-spacing: 0px;
+}
+.social-media-card-wrapper .social-media-card .red {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0px;
+  color: #dc414c;
+}
+
+.border-color {
+  border-top-width: 5px;
+  border-top-style: solid;
+}
+.border-color--facebook {
+  border-top-color: #178ff5;
+}
+.border-color--twitter {
+  border-color: #178FF5;
+}
+.border-color--instagram {
+  border-color: #EE877E;
+}
+.border-color--youtube {
+  border-color: #C4032B;
+}
+
+.mb-title {
+  margin-bottom: 30px;
+}
+
+.mb-followers {
+  margin-bottom: 9px;
+}
+
+.mb-today {
+  margin-bottom: 25px;
+}
+
+.rectangle-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .rectangle-card-wrapper {
+    flex-direction: row;
+    gap: 65px;
+    flex-wrap: wrap;
+  }
+}
+
+.rectangle-card {
+  background-color: #f0f2fa;
+  padding: 27px 24px;
+  width: 90%;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .rectangle-card {
+    width: 23%;
+  }
+}
+
+.first-col {
+  gap: 23px;
+  display: flex;
+  flex-direction: column;
+}
+.last-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px;
+}
+.last-col img {
+  width: 20px;
+  height: 20px;
+}
+.last-col :last-child {
+  color: #1db489;
+}
+
+h2 {
+  margin-top: 50px;
+  margin-left: 90px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #63687d;
+}
+
+/*# sourceMappingURL=style.css.map */

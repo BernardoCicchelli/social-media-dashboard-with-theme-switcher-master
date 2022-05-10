@@ -1,0 +1,255 @@
+@use "sass" as *;
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  height: 300vh;
+}
+.dark-mode{
+  background: $very-dark-blue-bg;
+  h1{
+    color: $white-text;
+  }
+  .container{
+    .row{
+      .col-xs{
+        h1{
+          color: $white-text;
+        }
+      }
+    }
+  }
+  .social-media-card-wrapper{
+  .social-media-card{
+    .row.flex{
+      background: $dark-desaturated-blue-card-bg;
+    }
+  }}
+
+  .row{
+    .col{
+      .span{
+        color: $white-text;
+      }
+    }
+  }
+  .rectangle-card-wrapper{
+    .rectangle-card{
+      background: hsla(228, 28%, 20%, 1);
+      ;
+    }
+  }
+}
+.container {
+  margin: 36px auto;
+
+  .divider {
+    display: block;
+  }
+  .row {
+    .col-xs {
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        color: #1d1f29;
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        color: #63687d;
+      }
+    }
+  }
+}
+
+.align-end {
+  @include align-end;
+}
+
+.align-center {
+  @include align-center;
+}
+
+.form-switch {
+  
+  .form-check-input {
+    width: $form-check-input-width;
+    height: $form-check-input-height;
+    
+  }
+}
+.social-media-card-wrapper {
+  @include md {
+    flex-direction: row;
+    justify-content: center;
+    gap: 63px;
+  }
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+
+  .social-media-card {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    .row.flex {
+      @include md {
+        width: 19vw;
+      }
+      height: 30vh;
+      width: 80vw;
+      border-radius: 5px;
+      background: #f1f3fa;
+      display: flex;
+      flex-direction: column;
+
+      .col.rows-gap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    h1 {
+      font-family: "Inter";
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -2px;
+      text-align: center;
+    }
+
+    span {
+      font-family: "Inter";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: 5px;
+      text-align: center;
+      color: #63687d;
+    }
+
+    .username {
+      font-family: "Inter";
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+
+    .green {
+      font-family: "Inter";
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 15px;
+      color: #1eb589;
+      letter-spacing: 0px;
+    }
+
+    .red {
+      font-family: "Inter";
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 0px;
+      color: #dc414c;
+    }
+  }
+}
+
+.border-color {
+  border-top-width: 5px;
+  border-top-style: solid;
+  &--facebook {
+    border-top-color: #178ff5;
+  }
+
+  &--twitter {
+    border-color: $border-color-twitter;
+  }
+
+  &--instagram {
+    border-color: $border-color-instagram;
+  }
+
+  &--youtube {
+    border-color: $border-color-youtube;
+  }
+}
+
+.mb-title {
+  margin-bottom: 30px;
+}
+
+.mb-followers {
+  margin-bottom: 9px;
+}
+
+.mb-today {
+  margin-bottom: 25px;
+}
+.rectangle-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  align-items: center;
+  @include md {
+    flex-direction: row;
+    gap: 65px;
+    flex-wrap: wrap;
+
+  }
+}
+
+.rectangle-card {
+  background-color: $light-grayish-blue-card-bg;
+  padding: 27px 24px;
+  width: 90%;
+  border-radius: 5px;
+  @include md{
+width: 23%;
+  }
+}
+.first-col {
+  :first-child {
+  }
+  gap: 23px;
+  display: flex;
+  flex-direction: column;
+  :last-child {
+  }
+}
+.last-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  :last-child {
+    color: $lime-green;
+  }
+}
+
+h2 {
+  margin-top: 50px;
+  margin-left: 90px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #63687d;
+}
+
+

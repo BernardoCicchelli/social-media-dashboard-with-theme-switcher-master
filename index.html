@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <script defer src="script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs col-md-12">
+          <h1>Social Media Dashboard</h1>
+          <span class="divider">Total Followers: 23,004</span>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <span class="span">Dark Mode</span>
+        </div>
+        <div class="col align-end">
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cards -->
+    <div class="social-media-card-wrapper">
+      <div class="social-media-card">
+        <div class="row flex border-color border-color--facebook">
+          <div class="col rows-gap">
+            <div class="row mb-title">
+              <div class="social-media-card__icon align-center">
+                <img src="/images/icon-facebook.svg" alt="facebook" />
+                <span class="username">@nathanf</span>
+              </div>
+            </div>
+            <div class="row mb-followers">
+              <div class="social-media-card__count-followers align-center">
+                <h1>1987</h1>
+              </div>
+            </div>
+            <div class="row mb-today">
+              <div class="social-media-card__followers-title align-center">
+                <span>FOLLOWERS</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="social-media-card__today-count align-center">
+                <span class="green">12 Today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-media-card">
+        <div class="row flex border-color border-color--twitter">
+          <div class="col rows-gap">
+            <div class="row mb-title">
+              <div class="social-media-card__icon align-center">
+                <img src="/images/icon-twitter.svg" alt="twitter" />
+                <span class="username">@nathanf</span>
+              </div>
+            </div>
+            <div class="row mb-followers">
+              <div class="social-media-card__count-followers align-center">
+                <h1>1987</h1>
+              </div>
+            </div>
+            <div class="row mb-today">
+              <div class="social-media-card__followers-title align-center">
+                <span>FOLLOWERS</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="social-media-card__today-count align-center">
+                <span class="green">99 Today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-media-card">
+        <div class="row flex border-color border-color--instagram">
+          <div class="col rows-gap">
+            <div class="row mb-title">
+              <div class="social-media-card__icon align-center">
+                <img src="/images/icon-instagram.svg" alt="instagram" />
+                <span class="username">@nathanf</span>
+              </div>
+            </div>
+            <div class="row mb-followers">
+              <div class="social-media-card__count-followers align-center">
+                <h1>1987</h1>
+              </div>
+            </div>
+            <div class="row mb-today">
+              <div class="social-media-card__followers-title align-center">
+                <span>FOLLOWERS</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="social-media-card__today-count align-center">
+                <span class="green">1099 Today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-media-card">
+        <div class="row flex border-color border-color--youtube">
+          <div class="col rows-gap">
+            <div class="row mb-title">
+              <div class="social-media-card__icon align-center">
+                <img src="/images/icon-youtube.svg" alt="youtube" />
+                <span class="username">@nathanf</span>
+              </div>
+            </div>
+            <div class="row mb-followers">
+              <div class="social-media-card__count-followers align-center">
+                <h1>1987</h1>
+              </div>
+            </div>
+            <div class="row mb-today">
+              <div class="social-media-card__followers-title align-center">
+                <span>FOLLOWERS</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="social-media-card__today-count align-center">
+                <span class="red">144 Today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Overview - Today</h2>
+    <div class="container rectangle-card-wrapper">
+      <div class="row rectangle-card">
+        <div class="col first-col">
+          <p>Page View</p>
+          <p>87</p>
+        </div>
+        <div class="col last-col">
+          <img src="/images/icon-facebook.svg" alt="facebook" />
+          <p>3%</p>
+        </div>
+      </div>
+      <div class="row rectangle-card">
+        <div class="col first-col">
+          <p>Likes</p>
+          <p>52</p>
+        </div>
+        <div class="col last-col">
+          <img src="/images/icon-facebook.svg" alt="" />
+          <p>2%</p>
+        </div>
+      </div>
+      <div class="row rectangle-card">
+        <div class="col first-col">
+          <p>Likes</p>
+          <p>5462</p>
+        </div>
+        <div class="col last-col">
+          <img src="/images/icon-instagram.svg" alt="" />
+          <p>2257%</p>
+        </div>
+      </div>
+      <div class="row rectangle-card">
+        <div class="col first-col">
+          <p>Profile Views</p>
+          <p>52k</p>
+        </div>
+        <div class="col last-col">
+          <img src="/images/icon-instagram.svg" alt="" />
+          <p>1375%</p>
+        </div>
+      </div>
+      <div class="row rectangle-card">
+        <div class="col first-col">
+          <p>Retweets</p>
+          <p>117</p>
+        </div>
+        <div class="col last-col">
+          <img src="/images/icon-twitter.svg" alt="" />
+          <p>303%</p>
+        </div>
+      </div>
+      <div class="row rectangle-card">
+        <div class="col first-col">
+          <p>Likes</p>
+          <p>507</p>
+        </div>
+        <div class="col last-col">
+          <img src="/images/icon-twitter.svg" alt="" />
+          <p>553%</p>
+        </div>
+      </div>
+      <div class="row rectangle-card">
+        <div class="col first-col">
+          <p>Likes</p>
+          <p>107</p>
+        </div>
+        <div class="col last-col">
+          <img src="/images/icon-youtube.svg" alt="" />
+          <p>19%</p>
+        </div>
+      </div>
+      <div class="row rectangle-card">
+        <div class="col first-col">
+          <p>Total Views</p>
+          <p>1407</p>
+        </div>
+        <div class="col last-col">
+          <img src="/images/icon-youtube.svg" alt="" />
+          <p>12%</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
